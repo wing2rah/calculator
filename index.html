@@ -304,12 +304,12 @@
     <script type="text/javascript" charset="utf-8">
       function cuto(){
         var itemb=document.getElementById('cuto').value;
-        if(itemb=="stop background music"){
-        audio1.pause();
-        document.getElementById('cuto').value="play music";
+        if(itemb=="play music"){
+        audio1.play();
+        document.getElementById('cuto').value="stop music";
         }else{
-          audio1.play();
-          document.getElementById('cuto').value="stop background music";
+          audio1.pause();
+          document.getElementById('cuto').value="play music";
         }
       }
     </script>
