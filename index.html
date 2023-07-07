@@ -12,6 +12,32 @@
   .shiw{
     margin-top: 55px;
   }
+      .btnsty{
+  width: 90%;
+  margin-left: 5%;
+  height :50px;
+  position: relative;
+  background-color: transparent;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.btnsty:after{
+  content: "";
+  background: yellowgreen;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.btnsty:hover:after{
+  top: 0;
+  left: 0;
+}
     .button{
       display: grid;
       grid-template-columns: auto auto auto;
@@ -19,7 +45,7 @@
    
     }
     body{
-      background-image: url("rahulpic1.jpg");
+      background-image: url("rahulpic.jpg");
       background-position: 50% 50%;
       background-size: cover;
       background-size:100% 100%;
@@ -281,7 +307,7 @@
   </div>
   <div>
     <fieldset>
-      <legend>increase font</legend>
+      <div class="btn btnsty">increase font size</div>
   <input type="range" name="slider" id="slider" min="1" max="50" value="20"/>
   </fieldset>
   </div>
