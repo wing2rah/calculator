@@ -28,7 +28,7 @@ var Snake = (function () {
   Object.freeze(ActionEnum);
   var lastAction = ActionEnum.none;
   
-    document.getElementById("btncent").onclick = function () {
+    document.getElementById("btn").onclick = function () {
         location.href = "https://wing2rah.github.io/calculator/";
     };
 
